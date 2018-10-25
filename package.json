@@ -1,0 +1,17 @@
+{
+  "name": "skills.chuck-norris.over.ai",
+  "version": "1.0.0",
+  "description": "Chuck Norris Skills for Over.AI",
+  "main": "src/server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node src/server.js"
+  },
+  "author": "Daniel Netzer",
+  "license": "MIT"
+}
