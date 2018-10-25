@@ -6,20 +6,9 @@ const https = require('https');
  */
 const constructBotResponse = (introSpeakOut) => {
     return {
-        statusCode: 200,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "format": "Default",
-            "formatVersion": "1",
-            "status": "SUCCESS",
-            "result": {
-                "intent": "concert.info",
-                "introSpeakOut": introSpeakOut
-            }
-        })
+        Result: {
+            "IntroSpeakOut": introSpeakOut
+        }
     };
 };
 

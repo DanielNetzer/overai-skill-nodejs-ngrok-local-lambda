@@ -25,7 +25,7 @@ server.post('/', (req, res) => {
     };
 
     lambda.handler(req, context, (err, cbRes) => {
-        res.send(cbRes.body).status(cbRes.statusCode);
+        res.json(cbRes);
     })
 
 });
